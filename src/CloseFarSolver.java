@@ -12,10 +12,9 @@ public class CloseFarSolver {
             return false;
         } else if ((absA + 1) == absB && (absA + 1) == absC) {
             return false;
-        } else if ((absA - 1) == absB && (absA - 1) == absC) {
+        } else if ((Math.abs(absA - 1)) == absB && ((Math.abs(absA - 1) == absC))) {
             return false;
-        } else if ((absA - 1) == absB || ((absA - 1) == absC) || ((absA + 1) == absB) || ((absA) + 1) == absC) {
-                if (((absA - absB == 1) && (absA - absC >= 2)) || (absA - absC == 1 && (absA - absB >= 2)))
+        } else if (((Math.abs(absA - absB) == 1) && (Math.abs(absA - absC) >= 2)) || (Math.abs(absA - absC) == 1 && (Math.abs(absA - absB) >= 2))) {
             return true;
         }
         return false;
