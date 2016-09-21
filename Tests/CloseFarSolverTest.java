@@ -45,4 +45,14 @@ public class CloseFarSolverTest {
         assertTrue(thisTest == true);
     }
 
+    @Test
+    public void testSequential() throws Exception {
+        boolean thisTest = solver.solveCloseFar(3, 4, 5);
+        assertTrue(thisTest == false);
+    }
+    @Test
+    public void testOnlyTwoNumbersTheSame() throws Exception {
+        boolean thisTest = solver.solveCloseFar(7, 7, 5);
+        assertTrue(thisTest == true);
+    }
 }

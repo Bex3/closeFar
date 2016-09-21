@@ -14,7 +14,7 @@ public class CloseFarSolver {
             return false;
         } else if ((Math.abs(absA - 1)) == absB && ((Math.abs(absA - 1) == absC))) {
             return false;
-        } else if (((Math.abs(absA - absB) == 1) && (Math.abs(absA - absC) >= 2)) || (Math.abs(absA - absC) == 1 && (Math.abs(absA - absB) >= 2))) {
+        } else if (((Math.abs(absA - absB) == 1) && (Math.abs(absA - absC) >= 2) && (Math.abs(absB - absC) >= 2 ))|| (Math.abs(absA - absC) == 1 && (Math.abs(absA - absB) >= 2)) && (Math.abs(absC - absB) >= 2)) {
             return true;
         }
         return false;
