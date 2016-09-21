@@ -25,24 +25,24 @@ public class CloseFarSolverTest {
     @Test
     public void testAllSameNumber() throws Exception {
         boolean thisTest = solver.solveCloseFar(5, 5, 5);
-        assertTrue(false);
+        assertTrue(thisTest == false);
     }
 
     @Test
     public void testBothBCMoreThanOneAway() throws Exception {
         boolean thisTest = solver.solveCloseFar(1, 25, 30);
-        assertTrue(false);
+        assertTrue(thisTest == false);
     }
     @Test
     public void testBothBCAreOneAway() throws Exception {
         boolean thisTest = solver.solveCloseFar(30, 31, 29);
-        assertTrue(false);
+        assertTrue(thisTest == false);
     }
 
     @Test
     public void testShouldPass() throws Exception {
         boolean thisTest = solver.solveCloseFar(56, 60, 55);
-        assertTrue(true);
+        assertTrue(thisTest == true);
     }
 
 }
